@@ -1,10 +1,7 @@
 /* footer */
 footer {
-  position: fixed;
   height: 5vh;
-  bottom: 0;
-  left: 0;
-  background-color: #fff;
+  background-image: url('../images/white_00106.jpg');
   width: 100%;
 }
 .footer-text {
@@ -12,4 +9,5 @@ footer {
   font-size: 1vw;
   text-align: center;
   line-height: 5vh;
+  color: #000;
 }
