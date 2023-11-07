@@ -1,0 +1,13 @@
+/* footer */
+footer {
+  height: 5vh;
+  background-image: url('../images/white_00106.jpg');
+  width: 100%;
+}
+.footer-text {
+  margin: 0;
+  font-size: 1vw;
+  text-align: center;
+  line-height: 5vh;
+  color: #000;
+}
