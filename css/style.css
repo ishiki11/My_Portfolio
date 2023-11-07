@@ -65,6 +65,7 @@ body {
 .name-en {
   font-size: 1vw;
   margin: 0;
+  color: #ccc;
 }
 .about-p {
   font-size: 1.2vw;
@@ -75,4 +76,32 @@ body {
 }
 .about-p > a {
   color: #0ad;
+}
+
+/* SKILL */
+#skill {
+  height: 100vh;
+}
+
+.skill-title {
+  text-align: center;
+  font-size: 3vw;
+  padding-top: 5vh;
+}
+.skill-table {
+  width: 70vw;
+  border-collapse: collapse;
+  border: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: auto;
+}
+.td,
+.tr,
+.th {
+  width: 30vw;
+  padding: 1vw;
+  font-size: 1vw;
+}
+.th {
+  background-color: rgba(5, 5, 5, 0.5);
 }
