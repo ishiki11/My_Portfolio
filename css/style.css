@@ -106,3 +106,13 @@ body {
   font-weight: 500;
   background-color: rgba(5, 5, 5, 0.5);
 }
+
+/* WORKS */
+#works {
+  min-height: 95vh;
+}
+.works-title {
+  text-align: center;
+  font-size: 3vw;
+  padding-top: 5vh;
+}
