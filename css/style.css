@@ -102,5 +102,7 @@ body {
   font-size: 1vw;
 }
 .th {
+  font-size: 1.3vw;
+  font-weight: 500;
   background-color: rgba(5, 5, 5, 0.5);
 }
