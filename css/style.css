@@ -1,21 +1,24 @@
-body {
-  margin: 0;
+html {
+  scroll-behavior: smooth;
 }
 
-/* TOP画面 */
+body {
+  margin: 0;
+  background-image: url('../images/denim.png');
+  color: #fff;
+}
+
+/* TOP */
 #top {
   height: 100vh;
-  background: #ccc;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('../images/denim.png');
 }
 .top-title {
   font-size: 8vw;
   margin: 0;
-  color: #fff;
   font-family: 'Nanum Gothic Coding', monospace;
 }
 .top-subtitle {
@@ -23,4 +26,53 @@ body {
   margin: 0;
   color: #ccc;
   font-family: 'Edu TAS Beginner', cursive;
+}
+
+/* About */
+#about {
+  height: 100vh;
+}
+.about-content {
+  width: 70vw;
+  height: 60vh;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  border-radius: 1vw;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.about-title {
+  text-align: center;
+  font-size: 3vw;
+  padding-top: 5vh;
+}
+.about-text {
+  margin-left: 5vw;
+}
+.about-img {
+  width: 20vw;
+}
+.about-img > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.name-ja {
+  font-size: 2vw;
+  margin: 0;
+}
+.name-en {
+  font-size: 1vw;
+  margin: 0;
+}
+.about-p {
+  font-size: 1.2vw;
+}
+.about-label {
+  display: inline-block;
+  width: 10vw;
+}
+.about-p > a {
+  color: #0ad;
 }
