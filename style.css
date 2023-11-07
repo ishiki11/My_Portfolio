@@ -43,6 +43,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: url('./images/denim.png');
 }
 .top-title {
   font-size: 8vw;
