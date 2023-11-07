@@ -1,0 +1,32 @@
+/* header */
+header {
+  position: fixed;
+  top: 5vh;
+  right: 0vw;
+}
+.flex {
+  display: flex;
+}
+.nav-a {
+  font-size: 1.5vw;
+  width: 120%;
+  margin-right: 15vh;
+  color: #aaa;
+  text-align: center;
+  text-decoration: none;
+}
+.nav-a::after {
+  position: relative;
+  content: '';
+  display: block;
+  width: 0;
+  transition: width 0.3s;
+  border-bottom: 2px solid white;
+  margin: 0 auto;
+}
+.nav-a:hover::after {
+  width: 100%;
+}
+.nav-a:hover {
+  color: #fff;
+}
