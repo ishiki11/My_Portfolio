@@ -4,9 +4,7 @@ header {
   top: 5vh;
   right: 0vw;
 }
-.flex {
-  display: flex;
-}
+
 .nav-a {
   font-size: 1.5vw;
   width: 120%;
