@@ -12,6 +12,7 @@ header {
   color: #aaa;
   text-align: center;
   text-decoration: none;
+  font-family: 'Noto Sans', sans-serif;
 }
 .nav-a::after {
   position: relative;
@@ -19,7 +20,7 @@ header {
   display: block;
   width: 0;
   transition: width 0.3s;
-  border-bottom: 2px solid white;
+  border-bottom: 4px solid white;
   margin: 0 auto;
 }
 .nav-a:hover::after {
