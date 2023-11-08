@@ -139,6 +139,7 @@ a {
 .work-content {
   width: 45vw;
   height: 50vh;
+  margin: 5vh 0;
   background-color: #fff;
   border-radius: 2vw;
   box-shadow: 0.2vw 0.2vw 5px #888;
