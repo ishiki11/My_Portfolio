@@ -60,7 +60,7 @@ a {
 #about {
   height: 100vh;
 }
-.about-content {
+.about-item {
   width: 70vw;
   height: 60vh;
   margin: auto;
@@ -105,12 +105,15 @@ a {
 #skill {
   height: 100vh;
 }
+.skill-content {
+  align-items: center;
+  justify-content: center;
+}
 .skill-table {
   width: 70vw;
   border-collapse: collapse;
   border: #fff;
   background-color: rgba(0, 0, 0, 0.4);
-  margin: auto;
 }
 .td,
 .tr,
@@ -141,7 +144,7 @@ a {
   width: 45vw;
   height: 50vh;
   margin: 5vh 0;
-  background-image: url('../images/45degreee_fabric.png');
+  background-color: #fff;
   border-radius: 2vw;
   box-shadow: 0.2vw 0.2vw 5px #888;
   color: #000;
