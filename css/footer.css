@@ -1,8 +1,8 @@
 /* footer */
 footer {
   height: 5vh;
-  background-image: url('../images/white_00106.jpg');
   width: 100%;
+  background-color: #fff;
 }
 .footer-text {
   margin: 0;
@@ -10,4 +10,5 @@ footer {
   text-align: center;
   line-height: 5vh;
   color: #000;
+  font-weight: 600;
 }

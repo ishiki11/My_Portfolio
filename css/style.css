@@ -14,16 +14,26 @@ body {
 }
 .bold {
   margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 600;
 }
 a {
   color: #0ad;
+  font-family: 'Noto Sans', sans-serif;
 }
 .border {
   width: 80%;
   margin: 0 auto;
   margin-bottom: 4vh;
   border: solid 1px #000;
+}
+.about-title,
+.skill-title,
+.works-title {
+  font-family: 'Noto Sans', sans-serif;
+  text-align: center;
+  font-size: 3vw;
+  padding-top: 5vh;
 }
 
 /* TOP */
@@ -50,7 +60,7 @@ a {
 #about {
   height: 100vh;
 }
-.about-content {
+.about-item {
   width: 70vw;
   height: 60vh;
   margin: auto;
@@ -59,11 +69,7 @@ a {
   border: 1px solid #fff;
   border-radius: 1vw;
   background-color: rgba(0, 0, 0, 0.4);
-}
-.about-title {
-  text-align: center;
-  font-size: 3vw;
-  padding-top: 5vh;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 .about-text {
   margin-left: 5vw;
@@ -79,11 +85,13 @@ a {
 .name-ja {
   font-size: 2vw;
   margin: 0;
+  font-weight: 700;
 }
 .name-en {
   font-size: 1vw;
   margin: 0;
   color: #ccc;
+  font-family: 'Noto Sans', sans-serif;
 }
 .about-p {
   font-size: 1.2vw;
@@ -97,17 +105,15 @@ a {
 #skill {
   height: 100vh;
 }
-.skill-title {
-  text-align: center;
-  font-size: 3vw;
-  padding-top: 5vh;
+.skill-content {
+  align-items: center;
+  justify-content: center;
 }
 .skill-table {
   width: 70vw;
   border-collapse: collapse;
   border: #fff;
   background-color: rgba(0, 0, 0, 0.4);
-  margin: auto;
 }
 .td,
 .tr,
@@ -115,21 +121,19 @@ a {
   width: 30vw;
   padding: 1vw;
   font-size: 1vw;
+  font-weight: 500;
 }
 .th {
   font-size: 1.3vw;
   font-weight: 500;
   background-color: rgba(5, 5, 5, 0.5);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 600;
 }
 
 /* WORKS */
 #works {
   min-height: 95vh;
-}
-.works-title {
-  text-align: center;
-  font-size: 3vw;
-  padding-top: 5vh;
 }
 .work-contents {
   display: flex;
@@ -140,7 +144,7 @@ a {
   width: 45vw;
   height: 50vh;
   margin: 5vh 0;
-  background-color: #fff;
+  background-image: url('../images/45degreee_fabric.png');
   border-radius: 2vw;
   box-shadow: 0.2vw 0.2vw 5px #888;
   color: #000;
