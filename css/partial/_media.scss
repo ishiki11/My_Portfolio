@@ -1,0 +1,32 @@
+/* 変数にブレイクポイントの値を代入 */
+$xl: 1199px;
+$lg: 991px;
+$md: 767px;
+$sm: 575px;
+$xs: 320;
+
+@mixin xl {
+  @media (max-width: 1280px) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin md {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin sm {
+  @media (max-width: 640px) {
+    @content;
+  }
+}
+@mixin xs {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
