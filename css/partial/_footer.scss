@@ -1,0 +1,16 @@
+@import 'color', 'font';
+
+/* footer */
+footer {
+  height: 5vh;
+  width: 100%;
+  background-color: #fff;
+}
+.footer-text {
+  margin: 0;
+  font-size: 1vw;
+  text-align: center;
+  line-height: 5vh;
+  color: $black;
+  font-weight: 600;
+}
