@@ -1,0 +1,153 @@
+@import 'header', 'footer', 'color', 'font';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-image: url('../images/denim.png');
+  color: $white;
+}
+
+/* 全体共通 */
+.flex {
+  display: flex;
+}
+.bold {
+  margin: 0;
+  font-family: $f-NotoJP;
+  font-weight: 600;
+}
+a {
+  color: $linkColor;
+  font-family: $f-Noto;
+}
+.border {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 4vh;
+  border: solid 1px $black;
+}
+.about-title,
+.skill-title,
+.works-title {
+  font-family: 'Noto Sans', sans-serif;
+  text-align: center;
+  font-size: 3vw;
+  padding-top: 5vh;
+}
+
+/* TOP */
+#top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.top-title {
+  font-size: 8vw;
+  margin: 0;
+  font-family: $f-Nanum;
+}
+.top-subtitle {
+  font-size: 2vw;
+  margin: 0;
+  color: #ccc;
+  font-family: $f-Edu;
+}
+
+/* About */
+.about-item {
+  width: 70vw;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $white;
+  border-radius: 1vw;
+  background-color: rgba($black, 0.4);
+  font-family: $f-NotoJP;
+}
+.about-text {
+  margin-left: 5vw;
+}
+.about-img {
+  width: 20vw;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+}
+.name-ja {
+  font-size: 2vw;
+  margin: 0;
+  font-weight: 700;
+}
+.name-en {
+  font-size: 1vw;
+  margin: 0;
+  color: #ccc;
+  font-family: 'Noto Sans', sans-serif;
+}
+.about-p {
+  font-size: 1.2vw;
+}
+.about-label {
+  display: inline-block;
+  width: 10vw;
+}
+
+/* SKILL */
+.skill-content {
+  align-items: center;
+  justify-content: center;
+}
+.skill-table {
+  width: 70vw;
+  border-collapse: collapse;
+  border: #fff;
+  background-color: rgba($black, 0.4);
+}
+
+/* WORKS */
+#works {
+  min-height: 95vh;
+}
+.work-contents {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.work-content {
+  width: 45vw;
+  margin: 5vh 0;
+  background-image: url('../images/45degreee_fabric.png');
+  border-radius: 2vw;
+  box-shadow: 0.2vw 0.2vw 5px $gray;
+  color: $black;
+}
+.work-item {
+  justify-content: space-around;
+  align-items: center;
+}
+.item-title {
+  text-align: center;
+  font-size: 1.5vw;
+  margin-bottom: 1vh;
+}
+.work-img {
+  width: 45%;
+  height: auto;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.work-text {
+  width: 50%;
+  font-size: 0.9vw;
+  p {
+    margin-top: 0;
+  }
+}
