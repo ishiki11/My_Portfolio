@@ -1,16 +1,16 @@
-@import 'color', 'font';
+@use 'color' as c;
 
 /* footer */
 footer {
   height: 5vh;
   width: 100%;
-  background-color: #fff;
+  background-color: c.$main;
 }
 .footer-text {
   margin: 0;
   font-size: 1vw;
   text-align: center;
   line-height: 5vh;
-  color: $black;
+  color: c.$sub;
   font-weight: 600;
 }
