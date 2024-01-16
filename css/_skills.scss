@@ -1,0 +1,56 @@
+@use 'partial/color' as c;
+@use 'partial/font' as f;
+
+/* SKILL */
+.skill-contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skill-item {
+  width: 60vw;
+  border: 1px solid c.$main;
+  border-radius: 1vw;
+  background-color: c.$contents;
+  font-family: f.$NotoJP;
+  h2 {
+    padding-top: 2vh;
+    text-align: center;
+  }
+  ul {
+    font-size: 1.2vw;
+    text-align: center;
+    padding: 0;
+    display: flex;
+  }
+  .lang {
+    flex-wrap: wrap;
+    border-bottom: 1px solid c.$main;
+    padding-bottom: 2vh;
+    justify-content: center;
+    li {
+      width: 10vw;
+      margin: 1vw;
+      list-style: none;
+      border: 3px c.$link;
+      border-style: none none solid solid;
+      border-radius: 0.3vw;
+      background-color: c.$contents;
+    }
+  }
+  .lang::after {
+    border-bottom: 2px dashed c.$main;
+  }
+  .license {
+    flex-direction: column;
+    width: 40vw;
+    margin: auto;
+    padding-bottom: 5vh;
+    li {
+      display: flex;
+      list-style: none;
+      margin: 1vh 0;
+      border-bottom: 1px dashed c.$main;
+    }
+  }
+}

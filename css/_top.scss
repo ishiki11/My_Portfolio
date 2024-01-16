@@ -1,0 +1,23 @@
+@use 'partial/color' as c;
+@use 'partial/font' as f;
+
+/* TOP */
+#top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40vh;
+  padding-bottom: 40vh;
+}
+.top-title {
+  font-size: 8vw;
+  margin: 0;
+  font-family: f.$Nanum;
+}
+.top-subtitle {
+  font-size: 2vw;
+  margin: 0;
+  color: c.$accent;
+  font-family: f.$Edu;
+}

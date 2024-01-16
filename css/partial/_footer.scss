@@ -1,4 +1,5 @@
 @use 'color' as c;
+@use 'font' as f;
 
 /* footer */
 footer {
@@ -9,6 +10,7 @@ footer {
 .footer-text {
   margin: 0;
   font-size: 1vw;
+  font-family: f.$Noto;
   text-align: center;
   line-height: 5vh;
   color: c.$sub;
