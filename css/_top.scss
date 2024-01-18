@@ -1,5 +1,6 @@
 @use 'partial/color' as c;
 @use 'partial/font' as f;
+@use 'partial/media' as m;
 
 /* TOP */
 #top {
@@ -7,8 +8,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 40vh;
-  padding-bottom: 40vh;
+  height: 100vh;
 }
 .top-title {
   font-size: 8vw;
@@ -20,4 +20,25 @@
   margin: 0;
   color: c.$accent;
   font-family: f.$Edu;
+}
+
+@include m.lg {
+  #top {
+    background-color: c.$main;
+    background-image: url('../images/stones-bg.png');
+    background-position: center;
+    background-size: 60vw;
+    background-repeat: no-repeat;
+    .top-title {
+      color: c.$sub;
+      font-size: 14vw;
+      text-align: center;
+    }
+    .top-subtitle {
+      color: c.$sub;
+      margin-top: 10px;
+      font-size: 8vw;
+      text-align: center;
+    }
+  }
 }

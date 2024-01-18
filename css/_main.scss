@@ -1,5 +1,6 @@
 @use 'partial/color' as c;
 @use 'partial/font' as f;
+@use 'partial/media' as m;
 
 html {
   scroll-behavior: smooth;
@@ -37,4 +38,15 @@ a {
   text-align: center;
   font-size: 3vw;
   padding-top: 5vh;
+}
+
+@include m.lg {
+  .about-title,
+  .skill-title,
+  .works-title {
+    font-family: f.$Noto;
+    text-align: center;
+    font-size: 6vw;
+    padding-top: 5vh;
+  }
 }

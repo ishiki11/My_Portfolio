@@ -1,5 +1,6 @@
 @use 'partial/color' as c;
 @use 'partial/font' as f;
+@use 'partial/media' as m;
 
 /* SKILL */
 .skill-contents {
@@ -14,6 +15,7 @@
   background-color: c.$contents;
   font-family: f.$NotoJP;
   h2 {
+    font-size: 1.3vw;
     padding-top: 2vh;
     text-align: center;
   }
@@ -51,6 +53,39 @@
       list-style: none;
       margin: 1vh 0;
       border-bottom: 1px dashed c.$main;
+    }
+  }
+}
+
+@include m.lg {
+  #skill {
+    padding-bottom: 5vh;
+  }
+  .skill-item {
+    width: 80vw;
+    h2 {
+      font-size: 4vw;
+    }
+    ul {
+      font-size: 3vw;
+    }
+    .lang {
+      border-bottom: 1px solid c.$main;
+      li {
+        width: 25vw;
+        margin: 1vw;
+        list-style: none;
+        border: 3px c.$link;
+        border-style: none none solid solid;
+        border-radius: 1vw;
+        background-color: c.$contents;
+      }
+    }
+    .license {
+      width: 70vw;
+      li {
+        margin: 1vh 0;
+      }
     }
   }
 }

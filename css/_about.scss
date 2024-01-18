@@ -1,5 +1,6 @@
 @use 'partial/color' as c;
 @use 'partial/font' as f;
+@use 'partial/media' as m;
 
 /* About */
 #about {
@@ -44,4 +45,56 @@
 .about-label {
   display: inline-block;
   width: 10vw;
+}
+
+@include m.lg {
+  #about {
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+  }
+  .about-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3vh 0;
+    .about-img {
+      width: 25vw;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+    .about-text {
+      margin: 0;
+      font-size: 3vw;
+      .name-ja {
+        text-align: center;
+        font-size: 5vw;
+        margin: 0;
+        font-weight: 700;
+      }
+      .name-en {
+        text-align: center;
+        font-size: 2.5vw;
+        margin: 0;
+        color: c.$accent;
+        font-family: f.$Noto;
+      }
+      .about-p {
+        display: flex;
+        flex-direction: column;
+        font-size: 3vw;
+        text-align: center;
+        margin: 3vh 0;
+        .colon {
+          display: none;
+        }
+        .about-label {
+          font-weight: 600;
+          width: auto;
+        }
+      }
+    }
+  }
 }

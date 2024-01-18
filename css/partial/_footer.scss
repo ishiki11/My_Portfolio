@@ -1,5 +1,6 @@
 @use 'color' as c;
 @use 'font' as f;
+@use 'media' as m;
 
 /* footer */
 footer {
@@ -15,4 +16,12 @@ footer {
   line-height: 5vh;
   color: c.$sub;
   font-weight: 600;
+}
+
+@include m.lg {
+  footer {
+    .footer-text {
+      font-size: 3vw;
+    }
+  }
 }

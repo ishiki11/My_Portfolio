@@ -1,34 +1,54 @@
 @use 'color' as c;
 @use 'font' as f;
+@use 'media' as m;
 
 /* header */
 header {
   position: fixed;
   top: 5vh;
   right: 0vw;
+  .nav-a {
+    font-size: 1.5vw;
+    width: 120%;
+    margin-right: 5vw;
+    color: c.$accent;
+    text-align: center;
+    text-decoration: none;
+    font-family: f.$Noto;
+    &::after {
+      position: relative;
+      content: '';
+      display: block;
+      width: 0;
+      transition: width 0.3s;
+      border-bottom: 4px solid c.$main;
+      margin: 0 auto;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+    &:hover {
+      color: c.$main;
+    }
+  }
 }
 
-.nav-a {
-  font-size: 1.5vw;
-  width: 120%;
-  margin-right: 5vw;
-  color: c.$accent;
-  text-align: center;
-  text-decoration: none;
-  font-family: f.$Noto;
-}
-.nav-a::after {
-  position: relative;
-  content: '';
-  display: block;
-  width: 0;
-  transition: width 0.3s;
-  border-bottom: 4px solid c.$main;
-  margin: 0 auto;
-}
-.nav-a:hover::after {
-  width: 100%;
-}
-.nav-a:hover {
-  color: c.$main;
+@include m.lg {
+  header {
+    top: 0;
+    right: 0;
+    height: 7vw;
+    width: 100vw;
+    background-color: c.$main;
+    .nav-a {
+      font-size: 4vw;
+      margin: 0;
+      &::after {
+        border-bottom: 0.8vw solid c.$denim;
+      }
+      &:hover {
+        color: c.$denim;
+      }
+    }
+  }
 }
