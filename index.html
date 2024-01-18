@@ -4,14 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>石木政吏 | PORTFOLIO</title>
-    <link
-      rel="icon"
-      href="./images/stones-spa-svgrepo-com.png"
-      type="image/png"
-    />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./images/stones-spa-svgrepo-com.png" type="image/png" />
+    <link rel="stylesheet" href="./css/style.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&?family=Noto+Sans+JP:wght@500;600
         family=Nanum+Gothic+Coding:wght@700&family=Noto+Sans:wght@700&display=swap"
@@ -43,27 +37,22 @@
           <p class="name-en">ISHIKI MASATO</p>
           <p class="name-ja">石木 政吏</p>
           <p class="about-p">
-            <span class="about-label">出身</span>： 岩手県盛岡市 2001年4月29日
+            <span class="about-label">出身</span><span class="colon">： </span>岩手県盛岡市 2001年4月29日
           </p>
           <p class="about-p">
-            <span class="about-label">趣味</span>：
-            ギター・音楽鑑賞・映画鑑賞・料理
+            <span class="about-label">学校</span><span class="colon">： </span>盛岡情報ビジネス＆デザイン専門学校
+            <span>高度情報工学科</span>
           </p>
           <p class="about-p">
-            <span class="about-label">学校</span>：
-            盛岡情報ビジネス＆デザイン専門学校 高度情報工学科
+            <span class="about-label">趣味</span><span class="colon">： </span>ギター・音楽鑑賞・映画鑑賞・料理
           </p>
           <p class="about-p">
-            <span class="about-label">メールアドレス</span>：
-            <a href="mailto:m.ishiki.sys21@morijyobi.ac.jp">
-              m.ishiki.sys21@morijyobi.ac.jp
-            </a>
+            <span class="about-label">メールアドレス</span><span class="colon">：</span>
+            <a href="mailto:m.ishiki.sys21@morijyobi.ac.jp">m.ishiki.sys21@morijyobi.ac.jp</a>
           </p>
           <p class="about-p">
-            <span class="about-label">GitHub</span>：
-            <a href="https://github.com/ishiki11">
-              https://github.com/ishiki11
-            </a>
+            <span class="about-label">GitHub</span><span class="colon">：</span>
+            <a href="https://github.com/ishiki11">https://github.com/ishiki11</a>
           </p>
         </div>
       </div>
@@ -71,52 +60,32 @@
 
     <section id="skill">
       <h1 class="skill-title">SKILLS</h1>
-      <div class="skill-content flex">
-        <table border="2" class="skill-table">
-          <tr class="tr">
-            <th colspan="3" class="th">学んだもの</th>
-          </tr>
-          <tr class="tr">
-            <td class="td">Java</td>
-            <td class="td">C言語</td>
-            <td class="td">C++</td>
-          </tr>
-          <tr class="tr">
-            <td class="td">HTML</td>
-            <td class="td">CSS</td>
-            <td class="td">PHP</td>
-          </tr>
-          <tr class="tr">
-            <td class="td">JavaScript</td>
-            <td class="td">TypeScript</td>
-            <td class="td">Python</td>
-          </tr>
-          <tr class="tr">
-            <td class="td">Laravel</td>
-            <td class="td">React</td>
-            <td class="td">Next</td>
-          </tr>
-
-          <tr class="tr">
-            <th colspan="3" class="th">取得資格</th>
-          </tr>
-          <tr class="tr">
-            <td class="td">2021/07</td>
-            <td colspan="2" class="td">Excel®表計算処理技能認定試験3級</td>
-          </tr>
-          <tr class="tr">
-            <td class="td">2021/10</td>
-            <td colspan="2" class="td">Javaプログラミング能力認定試験3級</td>
-          </tr>
-          <tr class="tr">
-            <td class="td">2022/03</td>
-            <td colspan="2" class="td">ITパスポート試験</td>
-          </tr>
-          <tr class="tr">
-            <td class="td">2022/05</td>
-            <td colspan="2" class="td">基本情報技術者試験</td>
-          </tr>
-        </table>
+      <div class="skill-contents">
+        <div class="skill-item">
+          <h2>学んだ言語・フレームワーク</h2>
+          <ul class="lang">
+            <li>Java</li>
+            <li>C言語</li>
+            <li>C++</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>PHP</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>Python</li>
+            <li>Laravel</li>
+            <li>React</li>
+            <li>Next</li>
+            <li>Flask</li>
+          </ul>
+          <h2>取得資格</h2>
+          <ul class="license">
+            <li>2021/07&emsp;Excel®表計算処理技能認定試験3級</li>
+            <li>2021/10&emsp;Javaプログラミング能力認定試験3級</li>
+            <li>2022/03&emsp;ITパスポート試験</li>
+            <li>2022/05&emsp;基本情報技術者試験</li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -125,7 +94,6 @@
       <div class="work-contents">
         <div class="work-content">
           <h2 class="item-title">SNSアプリ</h2>
-          <div class="border"></div>
           <div class="flex work-item">
             <div class="work-img">
               <img src="./images/snsapp.png" alt="icon" />
@@ -139,9 +107,7 @@
               <p class="bold">使用したもの</p>
               <p>TypeScript・Handlebars・CSS・NestJS・Prisma・PostgreSQL</p>
               <p class="bold">GitHub URL</p>
-              <a href="https://github.com/ishiki11/node_kadai">
-                https://github.com/ishiki11/node_kadai
-              </a>
+              <a href="https://github.com/ishiki11/node_kadai">https://github.com/ishiki11/node_kadai</a>
             </div>
           </div>
         </div>
@@ -149,7 +115,7 @@
     </section>
 
     <footer>
-      <p class="footer-text">© 2023 MASATO ISHIKI</p>
+      <p class="footer-text">&copy; 2023 MASATO ISHIKI</p>
     </footer>
   </body>
 </html>

@@ -1,0 +1,27 @@
+@use 'color' as c;
+@use 'font' as f;
+@use 'media' as m;
+
+/* footer */
+footer {
+  height: 5vh;
+  width: 100%;
+  background-color: c.$main;
+}
+.footer-text {
+  margin: 0;
+  font-size: 1vw;
+  font-family: f.$Noto;
+  text-align: center;
+  line-height: 5vh;
+  color: c.$sub;
+  font-weight: 600;
+}
+
+@include m.lg {
+  footer {
+    .footer-text {
+      font-size: 3vw;
+    }
+  }
+}

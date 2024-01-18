@@ -1,0 +1,52 @@
+@use 'partial/color' as c;
+@use 'partial/font' as f;
+@use 'partial/media' as m;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-image: url('../images/denim.png');
+  color: c.$main;
+}
+
+/* 全体共通 */
+.flex {
+  display: flex;
+}
+.bold {
+  margin: 0;
+  font-family: f.$NotoJP;
+  font-weight: 600;
+}
+a {
+  color: c.$link;
+  font-family: f.$Noto;
+}
+.border {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 4vh;
+  border: solid 1px c.$sub;
+}
+.about-title,
+.skill-title,
+.works-title {
+  font-family: f.$Noto;
+  text-align: center;
+  font-size: 3vw;
+  padding-top: 5vh;
+}
+
+@include m.lg {
+  .about-title,
+  .skill-title,
+  .works-title {
+    font-family: f.$Noto;
+    text-align: center;
+    font-size: 6vw;
+    padding-top: 5vh;
+  }
+}

@@ -1,0 +1,83 @@
+@use 'partial/color' as c;
+@use 'partial/font' as f;
+@use 'partial/media' as m;
+
+/* WORKS */
+#works {
+  padding-bottom: 15vh;
+}
+.work-contents {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.work-content {
+  width: 40vw;
+  margin: 5vh 0;
+  background-image: url('../images/45degreee_fabric.png');
+  border-radius: 2vw;
+  box-shadow: 0.2vw 0.2vw 5px c.$accent;
+  color: c.$sub;
+  .work-item {
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2vw;
+    .work-img {
+      width: 45%;
+      height: auto;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .work-text {
+      width: 50%;
+      font-size: 0.9vw;
+      padding-bottom: 5vh;
+      p {
+        margin-top: 0;
+      }
+    }
+  }
+  .item-title {
+    text-align: center;
+    font-size: 1.5vw;
+    margin-bottom: 1vh;
+    width: 30vw;
+    margin: 0 auto;
+    padding-top: 2vh;
+    margin-bottom: 2vh;
+    border-bottom: 2px solid c.$sub;
+  }
+}
+
+@include m.lg {
+  .work-content {
+    width: 70vw;
+    .work-item {
+      flex-direction: column;
+      .work-img {
+        width: 65%;
+        height: auto;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .work-text {
+        margin-top: 3vh;
+        width: 60vw;
+        font-size: 3vw;
+        padding-bottom: 5vh;
+        p {
+          margin-top: 0;
+        }
+      }
+    }
+    .item-title {
+      font-size: 4vw;
+      width: 55vw;
+      border-bottom: 1px solid c.$sub;
+    }
+  }
+}
